@@ -1,0 +1,45 @@
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+#card-img {
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+#card-tit {
+  font-size: 1rem;
+  color: rgb(96, 93, 93);
+}
+
+main {
+  padding-top: 6rem;
+  z-index: 1;
+  padding-bottom: 2rem;
+}
+
+li > .card-article {
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
